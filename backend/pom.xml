@@ -79,11 +79,11 @@
               <resources>
                 <resource>
                   <directory>${project.parent.basedir}/frontend/target/dist</directory>
-                  <includes>
+                  <!--includes>
                     <include>static/</include>
                     <include>index.html</include>
                     <include>favicon.ico</include>
-                  </includes>
+                  </includes-->
                 </resource>
               </resources>
             </configuration>

@@ -3,6 +3,10 @@ import pkg from './package'
 export default {
   mode: 'spa',
 
+  generate: {
+    dir: 'target/dist'
+  },
+
   /*
   ** Headers of the page
   */
