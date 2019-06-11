@@ -30,11 +30,12 @@
             </goals>
             <configuration>
               <nodeVersion>v11.14.0</nodeVersion>
+              <downloadRoot>http://nodejs.org/dist/</downloadRoot>
             </configuration>
           </execution>
           <!-- Install all project dependencies -->
           <execution>
-            <id>npm install</id>
+            <id>npm-install</id>
             <goals>
               <goal>npm</goal>
             </goals>
@@ -47,12 +48,22 @@
           </execution>
           <!-- Build and minify static files -->
           <execution>
-            <id>npm run build</id>
+            <id>npm-run-build</id>
             <goals>
               <goal>npm</goal>
             </goals>
             <configuration>
               <arguments>run build</arguments>
+            </configuration>
+          </execution>
+          <!-- Run for dev -->
+          <execution>
+            <id>npm-run-dev</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>run dev</arguments>
             </configuration>
           </execution>
         </executions>
